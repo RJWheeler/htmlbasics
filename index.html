@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A HTML referance list">
+    <meta name="keywords" content="Learning html">
+    <meta name="author" content="Robert Wheeler">
+    <!-- refreshs page <meta http-equiv="refresh" content="4;"> -->
+    <!-- load to a differnet page <meta http-equiv="refresh" content="5; https://rjwheeler.github.io/site/">--->
+    <!--<link rel="stylesheet" href="style.css"> -->
+    <link rel="icon" href="dragons.jpg">
+    <script src="myjs.js"></script>
+    <script>
+        document.write("Written with JavaScript from head section")
+        document.write("<br>")
+    </script>
+    <title>HTML basics</title>
+</head>
+<script>
+    document.write("Written with JavaScript from between head  and body section")
+    document.write("<br>")
+</script>
+<body bgcolor="lightblue">
+    <main>
+    <header>
+        Header
+        <navi>Navi</navi>
+    </header>
+    <a href="http://localhost/PHP/myphp.php">PHP FILE</a>
+    <h1>Largest Heading</h1>
+    <p>This is <q>paragraph</q></p>
+    <h2>2nd largest heading</h2>
+    <p><blockquote>This is a paragraph</blockquote></p>
+    <article>
+        <section> Section 1
+            <h3>3rd largest heading</h3>
+            <p>This is a paragraph</p>
+        </section>
+        <section> Section 2
+            <h4>4th largest heading</h4>
+            <p>This is a paragraph</p>
+        </section>
+        <section> Section 3
+            <h5>5th largest heading</h5>
+            <p>This is a paragraph</p>
+        </section>
+    </article>
+    <h6>Smallest Heading</h6>
+    <p>This is a paragraph</p>
+    <img src="dragons.jpg" alt="Dragons"><br>
+    <audio controls>
+        <source src="RainFallMedium PE1005201.mp3" type="audio/mp3">
+    </audio><br>
+    <video width="320px" height="240px" controls>
+        <source src="dragon.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <b>Bold</b>
+    <strong>Bold / Strong</strong>
+    <i>Italic</i>
+    <em>Emphasized</em>
+    <small>Small</small>
+    <big>Big</big>
+    <mark>Mark</mark>
+    <tt>Teletype</tt>
+    <strike>Strike</strike>
+    <del> Del</del>
+    <ins>Inserting</ins>
+    <sub>Subscript</sub>
+    <sup>superscript</sup>
+    <dl>
+        <dt>Html</dt>
+        <dd>Html is a language for websites</dd>
+        <dt>CSS</dt>
+        <dd>CSS is used to stype websites</dd>
+    </dl>
+    <script>
+        document.write("Written with JavaScript from between body section")
+        document.write("<br>")
+    </script>
+    <form action="https://rjwheeler.github.io/site/" method="get" name="this_is_a_form">
+        <!--Can turn Autocomplete on or off by setting it in the form tag with autocomplete="on/off"-->
+        <!--can add to form novalidate so you don't validate the date input in form-->
+        <!--method can be get or post get is not as secure as post-->
+        <label>Fieldset</label><br>
+        <fieldset>
+            <legend>Legend: </legend>
+            <p>Form Input types:</p>
+            <label for="text">Text: </label><br>
+            <input type = "text" name="text" placeholder="Text with a placeholder" id="text" autofocus required><br>
+            <label for="password">Password: </label><br>
+            <input type = "password" name="password" id="password"><br>
+            <label for="search">Search: </label><br>
+            <input type = "search"id="search"><br>
+            <label for="time">Time: </label><br>
+            <input type = "time" id="time"><br>
+            <label for="tel">Tel: </label><br>
+            <input type = "tel" id="tel"><br>
+            <label for="url">URL: </label><br>
+            <input type = "url" id="url"><br>
+            <label for="week">Week: </label><br>
+            <input type = "week" id="week"><br>
+            <label for="color">Color: </label><br>
+            <input type = "color" id="color"><br>
+            <label for="date">Date: </label><br>
+            <input type = "date" id="date"><br>
+            <label for="email">Email: </label><br>
+            <input type = "email" id="email"><br>
+            <label for="file">File: </label><br>
+            <input type = "file" id="file"multiple><br>
+            <label for="range">Range: </label><br>
+            <input type = "range" id="range" min="0" max="20"><br>
+            <label for="image">Image: </label><br>
+            <input type = "image" id="image" src="images/dragons.jpg" ><br>
+            <label for="month">Month: </label><br>
+            <input type = "month" id="month"><br>
+            <p>Radio Button:</p>
+            <label for="radio1">Radio 1: </label>
+            <input type = "radio" name="radiolist" value="1" id="radio1"><br>
+            <label for="radio2">Radio 2: </label>
+            <input type = "radio" name="radiolist" value="2" id="radio2"><br>
+            <label for="radio3">Radio 3: </label>
+            <input type = "radio" name="radiolist" value="3" id="radio3"><br>
+            <label for="radio4">Radio 4: </label>
+            <input type = "radio" name="radiolist" value="4" id="radio4"><br>
+            <p>Checkboxes:</p>
+            <label for="checkboxA">Checkbox A: </label>
+            <input type = "checkbox" name="checkboxlist" value="A" id="checkboxA"><br>
+            <label for="checkboxB">Checkbox B: </label>
+            <input type = "checkbox" name="checkboxlist" value="B" id="checkboxB"><br>
+            <label for="checkboxC">Checkbox C: </label>
+            <input type = "checkbox" name="checkboxlist" value="C" id="checkboxC"><br>
+            <label for="checkboxD">Checkbox D: </label>
+            <input type = "checkbox" name="checkboxlist" value="D" id="checkboxD"><br>
+            <label for="number">Number: </label><br>
+            <input type = "number" min="0" max="20" step="1" id="number"><br>
+            <label>Select one from a list of Options: </label><br>
+            <select size="1">
+                <option selected>Select an option</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="pink">Pink</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="gray">Gray</option>
+                <option value="purple">Purple</option>
+            </select><br>
+            <label>Select multiple from a list of Options: </label><br>
+            <select multiple>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="pink">Pink</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="gray">Gray</option>
+                <option value="purple">Purple</option>
+            </select><br>
+            <label for="textarea">Textarea: </label><br>
+            <textarea rows="5" cols="20">
+            </textarea><br> 
+            <label for="button">Button: </label><br>
+            <button type="button" onclick="alert('You clicked the button. It does nothing.')">Button</button><br>
+            <label for="button">Button input: </label><br>
+            <input type = "button" value="okay button" id="button"><br>
+            <label for="reset">Reset input: </label><br>
+            <input type = "reset" id="reset"><br>
+            <label for="submit">Submit input: </label><br>
+            <input type = "submit" id="submit"><br>
+        </fieldset>
+    </form>
+    <footer>Footer</footer>
+    </main>
+</body>
+</html>
+    <!--
+        <head> - Used to create a head section of website to insert mete informaetion.
+        <link> - Used to link external file to web page
+        <mete> - Used to insert mete information
+        <style> - Used to provide a style to HTML element
+        <title> - Used to provide a title for a web page
+        <body> - used to create a bodt section of the web page to insert visible content of user
+        <address> used to provide address
+        <code> - used to write computer code on the web page
+        <strong> - used to make a sentence or word or letter strong or bold
+        <small> - used to get small text on the web page
+        <form> - used to create a form on the web page
+        List of <form> elements:
+            <input>
+            List of <input> types:
+                text
+                password
+                radio
+                range
+                reset
+                search
+                submit
+                tel
+                time
+                url
+                week
+                button
+                checkbox
+                color
+                date
+                email
+                file
+                image
+                month 
+                number
+            List of <input> Elements:
+                type
+                value
+                name
+                id
+                readonly
+                disabled
+                size
+                maxlength
+                min & max
+                multiple
+                placeholder
+                autofocus
+                height & width
+                required
+                step
+            <label>
+            <textarea>
+            <button>
+            <fieldset> and <legend>
+            <select> and <option>
+        <table> - used to create a table on the web page
+        <video> - used to insert a video
+        <audio> - used to insert an audio
+        <script> - used to insert JavaScript in the HTML document
+        <header> - used to create a header for a website
+        <nav> - used to create navigation bar
+        <section> - used to create different section in your website
+        <article> - used to create independdent content
+        <aside> - used to create sidebar bar (left or right)
+        <figure> - used to insert graph, image or diagram
+        <figcaption> - used to give a title for an image or graph
+        <footer> - used to create footer 
+    -->
+            <!--Audio attributes:
+                autoplay
+                controls
+                muted
+            Audio events:
+                waiting
+                volumechange
+                timeupdate
+                suspend
+                stalled
+                seeking
+                seeked
+                play
+                loadeddata
+                empited
+                playing
+                ratechange
+                audioprocess
+                canplay
+                canplaythrough
+                complete
+                durationchange  
+            Video attributes:
+                contorls
+                autoplay
+                muted
+                poster
+            Video events:
+                pause
+                loadedmetadata
+                play
+                playing
+                progress
+                ratechange
+                seeking
+                ended
+                canplay
+                canplaythrough
+                durationchange
+                suspend
+                volumechange
+                waiting
+        -->
